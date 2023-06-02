@@ -1,0 +1,165 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+<div class="alert alert-danger">{{ message }}</div>
+{% endif %}
+<style>
+    body {
+        font-family: Cambria;
+        height: 100%;
+        background-image: linear-gradient(#fdfdfd, #fdfdfd);
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .rounded-circle {
+        margin-left: 50px;
+
+    }
+
+    .featurette-image{
+        margin: auto;
+        color: #9bdd9b;
+
+
+    }
+
+    .text-muted{
+        color: #9bdd9b;
+    }
+
+
+</style>
+<div class="container">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../static/img/health.ico">
+        <title>Health App</title>
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+        <!-- Bootstrap core CSS -->
+        <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="../static/css/carousel.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <main role="main">
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+            <div class="container marketing">
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="../static/heart.jpg" alt="Clock Image" width="140"
+                            height="140" margin="auto">
+                        <h2>Quick Prediction</h2>
+                        <p>We have used light ML model that can load within no time without compromising on the accuracy
+                            of the prediction. Light models quickly load which helps in better response of the page.</p>
+
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="../static/diabetes.jpg" alt="Checklist image" width="140"
+                            height="140" margin="auto">
+                        <h2>Wide Range</h2>
+                        <p>This Web-App provides a wide range of predicting the contamination multiple infectious
+                            diseases like Kidney disease, Diabetes, Liver Infection, Heart Disease & Breast Cancer.</p>
+
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="../static/liver.jpg" alt="Accuracy Image" width="140"
+                            height="140" margin="auto">
+                        <h2>Highly Accurate</h2>
+                        <p>Though this app provides a wide range and high speed the accuracy has not been compromised.
+                            Hyper-parameters have been selected very carefully so that the accuracy is not hampered.</p>
+
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+                <!-- START THE FEATURETTES -->
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Less Doctors<span class="text-muted" style="color: skyblue">: India is facing a huge
+                                shortage of Doctors</span></h2>
+                        <p class="lead">The shortage of professionals like doctors, nurses, technicians and
+                            infrastructure as given by the report of WHO that 0.76 doctors and 2.09 nurses are present
+                            per 1000 people. Additionally, Indian healthcare is also facing acute shortage of hospital
+                            beds with 1.3 hospital beds per 1000 population.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+                            src="../static/download.jpg" alt="Health Care Professionals">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Low Accessibility<span class="text-muted">: Non-uniform
+                                Accessibility to Healthcare across nation</span></h2>
+                        <p class="lead">The physical access to hospitals is still the major barrier to both preventive
+                            and curative health services, and also the major differences between the Rural and the Urban
+                            India. By making use of web technology and AI people in remote areas can also get access to
+                            the health-care.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+                            src="../static/images.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Affordability: <span class="text-muted">Good healthcare
+                                facilities still a dream of the common people in India</span></h2>
+                        <p class="lead">It is the biggest problem many Poor and marginalised are hit the most as by the
+                            government estimates, approx. 63 million people are faced with poverty every year because of
+                            their healthcare expenditure. Using the technology in a better way healthcare can be made
+                            affordable for everyone</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+                            src="../static/images.jpg" alt="Generic placeholder image">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <!-- /END THE FEATURETTES -->
+            </div><!-- /.container -->
+            <!-- FOOTER -->
+            <footer class="container">
+                <p class="float-right"><a href="#">Back to top</a></p>
+
+            </footer>
+        </main>
+        <!-- Bootstrap core JavaScript
+							================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../static/js/vendor/popper.min.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>
+        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+        <script src="../static/js/holder.min.js"></script>
+    </body>
+    <!-- <footer>
+        <center>
+            <ul style="list-style-type:none;">
+                &nbsp;
+                <li style="display: inline;"><a
+                        style="color: white;" target="blank"><span class="fa fa-github">Source Code</span></a></li>
+                <li>
+                    <p style="color: white;">Made with <span style="color: red;">&hearts;</span> by AIKTC GROUP 16 </p>
+                </li>
+            </ul>
+        </center>
+    </footer> -->
+</div>
+{% endblock %}
